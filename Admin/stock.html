@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bitcube </title>
+    <link rel="stylesheet" href="../admin/admin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/79cae532a1.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+</head>
+    <body>
+        <!--Menu section starts-->
+        <div class="menu">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                        <a href="Admin.html">Stock Levels</a>
+                        <a href="#" style="color: rgb(224, 146, 0); box-shadow: rgba(224, 146, 0, 0.534) 2.4px 2.4px 3.2px;">Stock</a>
+                        <a href="bought.html">Remove Stock</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+<div class="main">
+    <div class="container stock">
+        <div class="addStock">
+            <h2> Add Stock </h2>                
+            <form id="form" action="Admin.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Products">Select a product code</label>
+                    </div>
+                    <div class="theInput">
+                        <select id="Products" name="Products" required>
+                            <option value="Select">--Select--</option>
+                            <option value="PRODUCT01">PRODUCT01</option>
+                            <option value="PRODUCT02">PRODUCT02</option>
+                            <option value="PRODUCT03">PRODUCT03</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Items">Items Received</label>
+                    </div>
+                    <div class="theInput">
+                        <input type="number" id="Items" name="receivedItems" required placeholder="0">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Price"> Price per Item Received </label>
+                    </div>
+                    <div class="theInput">
+                        <input type="number" id="thePrice" name="itemPrice" required placeholder="0">
+                    </div>
+                </div>
+                <button onclick="theInputStock()" type="button" class="btn">
+                <i class="fas fa-plus"></i>
+                    Add Stock
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="admin.js"></script>
+    </body>
+</html>

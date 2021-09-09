@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Styling of the menu section */
+.menu {
+    border-bottom: 1px solid saddlebrown;
+    background: rgba(0, 0, 0, 0.705);
+}
+
+/*The styling of the navbar*/
+.menu .container {
+    padding: 1%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+/*Aligning the menu bar and making sure the is no dots as the come with a list*/
+.menu .container ul {
+    text-align: center;
+    list-style: none;
+}
+
+/*Styling of the menu links.*/
+.menu .container ul li a {
+    margin: 2%;
+    color: rgb(255, 181, 44);
+    /*Removing the underlines of that comes default with the link*/
+    text-decoration: none;
+    transition: all 0.5 ease-in-out;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.menu .container ul li a:hover {
+    color: rgb(224, 146, 0);
+}
+
+/* The styling of the main content */
+.main {/* The styling of the whole page with it's background and making sure it has the full height of the page. */
+    background: wheat;
+  /* making sure the content doesn't start at the top */ 
+    padding-top: 6.5vw;
+    height: 87%;
+}
+/* Styling the main content's container.
+    Making sure it's aligned at the centre with the right width and height*/
+.main .container {
+    align-items: center;
+    background: rgba(255, 99, 71, 0.5);
+    border-top-left-radius: 2vw;
+    border-bottom-left-radius: 2vw;
+    width: 70%;
+    height: 80%;
+    box-shadow: 0 .4vw .8vw 0 rgba(0, 0, 0, 0.5),
+        0 .6vw 2vw 0 rgba(0, 0, 0, 0.45);
+}
+
+.main .container h2 {
+    font-size: 3vw;
+    padding-bottom: 1.5vw;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.main .container .myContent {
+    background: rgba(255, 99, 71, 0.25);
+    width: 60%;
+    position: relative;
+    left: 2vw;
+}
+.main .container .content 
+{
+    display: inline-block;
+    width: 45%;
+}
+.main .container .content h1
+{
+    font-size: 1.8vw;
+}
+.main .container .right
+{
+    position: relative;
+    bottom: 2vw;
+}
+
+
+/*Add Stock and remove stock styling*/
+/* The height of the add & remove stock might need to be different to the stock level page */
+.main .stock {
+    height: 90%;
+}
+/* The styling of the form pages for both the add stock and the remove stock */
+.main .container form {
+    width: 95%;
+    height: 80%;
+    padding-top: 1.5vw;
+    padding-left: 4vw;
+}
+
+.main .container form .theInput {
+    width: 90%;
+}
+
+input[type="number"],
+input[type="email"],
+select {
+    width: 100%;
+    position: relative;
+    bottom: .6vw;
+    background: rgba(255, 99, 71, 0.5);
+    border-radius: .5vw;
+    border: none;
+}
+
+input[type="number"]:focus,
+input[type="email"]:focus {
+    box-shadow: 0 .4vw .8vw 0 rgba(0, 0, 0, 0.5),
+        0 .6vw 2vw 0 rgba(0, 0, 0, 0.45);
+    background: black;
+    color: blanchedalmond;
+    border: .5vw solid black;
+}
+
+button[type="button"] {
+    width: 90%;
+    padding: .7vw;
+    background: tan;
+    border: none;
+    border-radius: .7vw;
+    transition: all .3s ease-in-out;
+}
+
+button[type="button"] .bought {
+    background: rgb(250, 184, 98);
+}
+
+button:hover {
+    box-shadow: 0 .4vw .8vw 0 rgba(0, 0, 0, 0.5),
+        0 .6vw 2vw 0 rgba(0, 0, 0, 0.45);
+}
+/*
+Making the website responsive
+*/
+@media screen and (max-width: 1025px)
+{
+    form
+    {
+        height: 70%;
+        width: 75%;
+    }
+    .main .container
+    {
+        height: 50%;
+        width: 80%;
+        position: relative;
+        top: 20vw;
+    }
+    .main
+    {
+        height: 100%;
+    }
+    .main .container .myContent
+    {
+        width: 80%;
+        height: 70;
+    }
+    .main .container .content h1
+    {
+        font-size: 4vw;
+    }
+    .main .container h2
+    {
+        font-size: 5vw;
+    }
+}
